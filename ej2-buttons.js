@@ -6,7 +6,17 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-/******/ (() => { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("@syncfusion/ej2-base"));
+	else if(typeof define === 'function' && define.amd)
+		define(["@syncfusion/ej2-base"], factory);
+	else if(typeof exports === 'object')
+		exports["SyncfusionButtons"] = factory(require("@syncfusion/ej2-base"));
+	else
+		root["SyncfusionButtons"] = factory(root["@syncfusion/ej2-base"]);
+})(self, (__WEBPACK_EXTERNAL_MODULE__syncfusion_ej2_base__) => {
+return /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/button/button.js":
@@ -156,7 +166,7 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;function _
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("@syncfusion/ej2-base");
+module.exports = __WEBPACK_EXTERNAL_MODULE__syncfusion_ej2_base__;
 
 /***/ })
 
@@ -192,7 +202,8 @@ module.exports = require("@syncfusion/ej2-base");
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module is referenced by other modules so it can't be inlined
 /******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
-/******/ 	exports.SyncfusionButtons = __webpack_exports__;
 /******/ 	
+/******/ 	return __webpack_exports__;
 /******/ })()
 ;
+});

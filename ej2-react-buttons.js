@@ -6,7 +6,17 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-/******/ (() => { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("react"), require("@syncfusion/ej2-buttons"), require("@syncfusion/ej2-react-base"));
+	else if(typeof define === 'function' && define.amd)
+		define(["react", "@syncfusion/ej2-buttons", "@syncfusion/ej2-react-base"], factory);
+	else if(typeof exports === 'object')
+		exports["SyncfusionReactButtons"] = factory(require("react"), require("@syncfusion/ej2-buttons"), require("@syncfusion/ej2-react-base"));
+	else
+		root["SyncfusionReactButtons"] = factory(root["react"], root["@syncfusion/ej2-buttons"], root["@syncfusion/ej2-react-base"]);
+})(self, (__WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE__syncfusion_ej2_buttons__, __WEBPACK_EXTERNAL_MODULE__syncfusion_ej2_react_base__) => {
+return /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
@@ -136,7 +146,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \******************************************/
 /***/ ((module) => {
 
-module.exports = require("@syncfusion/ej2-buttons");
+module.exports = __WEBPACK_EXTERNAL_MODULE__syncfusion_ej2_buttons__;
 
 /***/ }),
 
@@ -146,7 +156,7 @@ module.exports = require("@syncfusion/ej2-buttons");
   \*********************************************/
 /***/ ((module) => {
 
-module.exports = require("@syncfusion/ej2-react-base");
+module.exports = __WEBPACK_EXTERNAL_MODULE__syncfusion_ej2_react_base__;
 
 /***/ }),
 
@@ -156,7 +166,7 @@ module.exports = require("@syncfusion/ej2-react-base");
   \************************/
 /***/ ((module) => {
 
-module.exports = require("react");
+module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
 
 /***/ })
 
@@ -233,7 +243,8 @@ module.exports = require("react");
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
-/******/ 	exports.SyncfusionReactButtons = __webpack_exports__;
 /******/ 	
+/******/ 	return __webpack_exports__;
 /******/ })()
 ;
+});
