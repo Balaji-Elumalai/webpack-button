@@ -8,14 +8,14 @@
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("SyncfusionBase"), require("react"), require("react-dom"));
+		module.exports = factory(require("React"), require("ReactDOM"), require("SyncfusionBase"));
 	else if(typeof define === 'function' && define.amd)
-		define(["SyncfusionBase", "react", "react-dom"], factory);
+		define(["React", "ReactDOM", "SyncfusionBase"], factory);
 	else if(typeof exports === 'object')
-		exports["SyncfusionReactBase"] = factory(require("SyncfusionBase"), require("react"), require("react-dom"));
+		exports["SyncfusionReactBase"] = factory(require("React"), require("ReactDOM"), require("SyncfusionBase"));
 	else
-		root["SyncfusionReactBase"] = factory(root["SyncfusionBase"], root["react"], root["react-dom"]);
-})(self, (__WEBPACK_EXTERNAL_MODULE__syncfusion_ej2_base__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom__) => {
+		root["SyncfusionReactBase"] = factory(root["React"], root["ReactDOM"], root["SyncfusionBase"]);
+})(self, (__WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom__, __WEBPACK_EXTERNAL_MODULE__syncfusion_ej2_base__) => {
 return /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -79,20 +79,9 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPAC
 
 /***/ }),
 
-/***/ "@syncfusion/ej2-base":
-/*!*********************************!*\
-  !*** external "SyncfusionBase" ***!
-  \*********************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = __WEBPACK_EXTERNAL_MODULE__syncfusion_ej2_base__;
-
-/***/ }),
-
 /***/ "react":
 /*!************************!*\
-  !*** external "react" ***!
+  !*** external "React" ***!
   \************************/
 /***/ ((module) => {
 
@@ -102,13 +91,24 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
 /***/ }),
 
 /***/ "react-dom":
-/*!****************************!*\
-  !*** external "react-dom" ***!
-  \****************************/
+/*!***************************!*\
+  !*** external "ReactDOM" ***!
+  \***************************/
 /***/ ((module) => {
 
 "use strict";
 module.exports = __WEBPACK_EXTERNAL_MODULE_react_dom__;
+
+/***/ }),
+
+/***/ "@syncfusion/ej2-base":
+/*!*********************************!*\
+  !*** external "SyncfusionBase" ***!
+  \*********************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = __WEBPACK_EXTERNAL_MODULE__syncfusion_ej2_base__;
 
 /***/ })
 

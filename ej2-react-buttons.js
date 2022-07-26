@@ -8,13 +8,13 @@
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("react"), require("SyncfusionButtons"), require("SyncfusionReactBase"));
+		module.exports = factory(require("React"), require("SyncfusionButtons"), require("SyncfusionReactBase"));
 	else if(typeof define === 'function' && define.amd)
-		define(["react", "SyncfusionButtons", "SyncfusionReactBase"], factory);
+		define(["React", "SyncfusionButtons", "SyncfusionReactBase"], factory);
 	else if(typeof exports === 'object')
-		exports["SyncfusionReactButtons"] = factory(require("react"), require("SyncfusionButtons"), require("SyncfusionReactBase"));
+		exports["SyncfusionReactButtons"] = factory(require("React"), require("SyncfusionButtons"), require("SyncfusionReactBase"));
 	else
-		root["SyncfusionReactButtons"] = factory(root["react"], root["SyncfusionButtons"], root["SyncfusionReactBase"]);
+		root["SyncfusionReactButtons"] = factory(root["React"], root["SyncfusionButtons"], root["SyncfusionReactBase"]);
 })(self, (__WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE__syncfusion_ej2_buttons__, __WEBPACK_EXTERNAL_MODULE__syncfusion_ej2_react_base__) => {
 return /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
@@ -140,6 +140,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "react":
+/*!************************!*\
+  !*** external "React" ***!
+  \************************/
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
+
+/***/ }),
+
 /***/ "@syncfusion/ej2-buttons":
 /*!************************************!*\
   !*** external "SyncfusionButtons" ***!
@@ -157,16 +167,6 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__syncfusion_ej2_buttons__;
 /***/ ((module) => {
 
 module.exports = __WEBPACK_EXTERNAL_MODULE__syncfusion_ej2_react_base__;
-
-/***/ }),
-
-/***/ "react":
-/*!************************!*\
-  !*** external "react" ***!
-  \************************/
-/***/ ((module) => {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
 
 /***/ })
 
