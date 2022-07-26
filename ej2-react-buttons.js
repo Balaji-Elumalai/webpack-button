@@ -8,13 +8,13 @@
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("react"), require("@syncfusion/ej2-buttons"), require("@syncfusion/ej2-react-base"));
+		module.exports = factory(require("react"), require("SyncfusionButtons"), require("SyncfusionReactBase"));
 	else if(typeof define === 'function' && define.amd)
-		define(["react", "@syncfusion/ej2-buttons", "@syncfusion/ej2-react-base"], factory);
+		define(["react", "SyncfusionButtons", "SyncfusionReactBase"], factory);
 	else if(typeof exports === 'object')
-		exports["SyncfusionReactButtons"] = factory(require("react"), require("@syncfusion/ej2-buttons"), require("@syncfusion/ej2-react-base"));
+		exports["SyncfusionReactButtons"] = factory(require("react"), require("SyncfusionButtons"), require("SyncfusionReactBase"));
 	else
-		root["SyncfusionReactButtons"] = factory(root["react"], root["@syncfusion/ej2-buttons"], root["@syncfusion/ej2-react-base"]);
+		root["SyncfusionReactButtons"] = factory(root["react"], root["SyncfusionButtons"], root["SyncfusionReactBase"]);
 })(self, (__WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE__syncfusion_ej2_buttons__, __WEBPACK_EXTERNAL_MODULE__syncfusion_ej2_react_base__) => {
 return /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
@@ -141,9 +141,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ }),
 
 /***/ "@syncfusion/ej2-buttons":
-/*!******************************************!*\
-  !*** external "@syncfusion/ej2-buttons" ***!
-  \******************************************/
+/*!************************************!*\
+  !*** external "SyncfusionButtons" ***!
+  \************************************/
 /***/ ((module) => {
 
 module.exports = __WEBPACK_EXTERNAL_MODULE__syncfusion_ej2_buttons__;
@@ -151,9 +151,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__syncfusion_ej2_buttons__;
 /***/ }),
 
 /***/ "@syncfusion/ej2-react-base":
-/*!*********************************************!*\
-  !*** external "@syncfusion/ej2-react-base" ***!
-  \*********************************************/
+/*!**************************************!*\
+  !*** external "SyncfusionReactBase" ***!
+  \**************************************/
 /***/ ((module) => {
 
 module.exports = __WEBPACK_EXTERNAL_MODULE__syncfusion_ej2_react_base__;

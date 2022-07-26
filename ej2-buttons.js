@@ -8,13 +8,13 @@
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("@syncfusion/ej2-base"));
+		module.exports = factory(require("SyncfusionBase"));
 	else if(typeof define === 'function' && define.amd)
-		define(["@syncfusion/ej2-base"], factory);
+		define(["SyncfusionBase"], factory);
 	else if(typeof exports === 'object')
-		exports["SyncfusionButtons"] = factory(require("@syncfusion/ej2-base"));
+		exports["SyncfusionButtons"] = factory(require("SyncfusionBase"));
 	else
-		root["SyncfusionButtons"] = factory(root["@syncfusion/ej2-base"]);
+		root["SyncfusionButtons"] = factory(root["SyncfusionBase"]);
 })(self, (__WEBPACK_EXTERNAL_MODULE__syncfusion_ej2_base__) => {
 return /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
@@ -160,9 +160,9 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;function _
 /***/ }),
 
 /***/ "@syncfusion/ej2-base":
-/*!***************************************!*\
-  !*** external "@syncfusion/ej2-base" ***!
-  \***************************************/
+/*!*********************************!*\
+  !*** external "SyncfusionBase" ***!
+  \*********************************/
 /***/ ((module) => {
 
 "use strict";
